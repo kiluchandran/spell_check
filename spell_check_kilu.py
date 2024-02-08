@@ -10,6 +10,7 @@ def main():
     file_name = args.input_file
     file1 = open(file_name, "r")
     lines = file1.readlines()
+    final_lines = [line.strip() for line in lines]
 
 
 main()
