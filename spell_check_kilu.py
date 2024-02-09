@@ -11,6 +11,7 @@ def main():
     lines = file1.readlines()
     final_lines = [line.strip() for line in lines]
     file2 = open("words.txt", "r")
+    lists = file2.readlines()
 
 
 main()
