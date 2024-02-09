@@ -16,6 +16,9 @@ def main():
     for line in final_lines:
         words = line.split(" ")
         n = len(words)
+        for i in range(0, n):
+            if words[i] not in final_list_words:
+                print(f"{words[i]} appears to be a typo ")
 
 
 main()
