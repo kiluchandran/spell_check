@@ -13,6 +13,9 @@ def main():
     file2 = open("words.txt", "r")
     lists = file2.readlines()
     final_list_words = [list.strip() for list in lists]
+    for line in final_lines:
+        words = line.split(" ")
+        n = len(words)
 
 
 main()
