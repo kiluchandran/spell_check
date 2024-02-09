@@ -1,6 +1,5 @@
 import argparse
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument("input_file")
 args = parser.parse_args()
@@ -11,6 +10,7 @@ def main():
     file1 = open(file_name, "r")
     lines = file1.readlines()
     final_lines = [line.strip() for line in lines]
+    file2 = open("words.txt", "r")
 
 
 main()
