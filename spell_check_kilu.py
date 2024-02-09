@@ -13,12 +13,15 @@ def main():
     file2 = open("words.txt", "r")
     lists = file2.readlines()
     final_list_words = [list.strip() for list in lists]
+    j = 1
     for line in final_lines:
         words = line.split(" ")
         n = len(words)
         for i in range(0, n):
             if words[i] not in final_list_words:
-                print(f"{words[i]} appears to be a typo ")
+                print(
+                    f" line {j} column {i+1} {words[i]} appears to be a typo ")
+        j += 1
 
 
 main()
