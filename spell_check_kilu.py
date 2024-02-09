@@ -12,6 +12,7 @@ def main():
     final_lines = [line.strip() for line in lines]
     file2 = open("words.txt", "r")
     lists = file2.readlines()
+    final_list_words = [list.strip() for list in lists]
 
 
 main()
