@@ -16,11 +16,12 @@ def main():
     j = 1
     for line in final_lines:
         words = line.split(" ")
-        n = len(words)
-        for i in range(0, n):
-            if words[i] not in final_list_words:
+        i = 1
+        for word in words:
+            if word not in final_list_words:
                 print(
-                    f" line {j} column {i+1} {words[i]} appears to be a typo ")
+                    f" line {j} column {i} {word} appears to be a typo ")
+            i += 1
         j += 1
 
 
